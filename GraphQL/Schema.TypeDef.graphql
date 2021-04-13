@@ -1,0 +1,8 @@
+type PersonInfo {
+    name: String!
+    age: Int!
+}
+
+type Query {
+    person: PersonInfo!
+}
