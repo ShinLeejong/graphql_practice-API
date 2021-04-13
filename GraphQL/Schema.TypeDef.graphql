@@ -1,8 +1,13 @@
-type PersonInfo {
-    name: String!
-    age: Int!
+type Movie {
+  id: Int!
+  title: String!
+  rating: Float!
+  summary: String!
+  language: String!
+  medium_cover_image: String!
 }
 
 type Query {
-    person: PersonInfo!
+  get_movie(title): Movie
+  get_movies(limit: Int, min_rating: Float, quality: String): [Movie]!
 }
